@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+
+<link rel='icon' href='favicon.ico' type='image/x-icon' / >
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <h1>
+          <a href="#">Currency Converter</a>
+        </h1>
+      </div>
+    </header>
+    <div class="converter_wrapper">
+      <div class="converter-container">
+          <div class="amount field">
+            <label for="">Amount</label>
+            <input type="text" id="amount" name="amount" value="" />
+          </div>
+          <div class="basecurrency field" id="basecurrency">
+            <label for="">Base Currency</label>
+            <select name="country" id="basecountry">
+              <option value="CAD">CAD-Canada</option>
+              <option value="HKD">HKD-Hong Kong</option>
+              <option value="ISK">ISK-Iceland</option>
+              <option value="PHP">PHP-Philippines</option>
+              <option value="DKK">DKK-Denmark</option>
+              <option value="HUF">HUF-Hungary</option>
+              <option value="CZK">CZK-Czech</option>
+              <option value="GBP">GBP-United Kingdom</option>
+              <option value="RON">RON-Romania</option>
+              <option value="SEK">SEK-Sweden</option>
+              <option value="IDR">IDR-Indonesia</option>
+              <option value="INR">INR-India</option>
+              <option value="BRL">BRL-Brazil</option>
+              <option value="RUB">RUB-Russia</option>
+              <option value="HRK">HRK-Croatia</option>
+              <option value="JPY">JPY-Japanese</option>
+              <option value="THB">THB-Thailand</option>
+              <option value="CHF">CHF-Switzerland</option>
+              <option value="EUR">EUR-Europe</option>
+              <option value="MYR">MYR-Malaysia</option>
+              <option value="BGN">BGN-Bulgaria</option>
+              <option value="TRY">TRY-Turky</option>
+              <option value="CNY">CNY-China-</option>
+              <option value="NOK">NOK-Norway</option>
+              <option value="NZD">NZD-Newzealand</option>
+              <option value="ZAR">ZAR-South Africa</option>
+              <option value="USD">USD-United States</option>
+              <option value="MXN">MXN-Mexico</option>
+              <option value="SGD">SGD-Singapore</option>
+              <option value="AUD">AUD-Australia</option>
+              <option value="ILS">ILS-Israel</option>
+              <option value="KRW">KRW-South Korea</option>
+              <option value="PLN">PLN-Poland</option>
+            </select>
+          </div>
+          <div class="changecurrency field">
+            <label for="">Convert to</label>
+            <select name="country" id="changecountry">
+              <option value="CAD">CAD-Canada</option>
+              <option value="HKD">HKD-Hong Kong</option>
+              <option value="ISK">ISK-Iceland</option>
+              <option value="PHP">PHP-Philippines</option>
+              <option value="DKK">DKK-Denmark</option>
+              <option value="HUF">HUF-Hungary</option>
+              <option value="CZK">CZK-Czech</option>
+              <option value="GBP">GBP-United Kingdom</option>
+              <option value="RON">RON-Romania</option>
+              <option value="SEK">SEK-Sweden</option>
+              <option value="IDR">IDR-Indonesia</option>
+              <option value="INR">INR-India</option>
+              <option value="BRL">BRL-Brazil</option>
+              <option value="RUB">RUB-Russia</option>
+              <option value="HRK">HRK-Croatia</option>
+              <option value="JPY">JPY-Japanese</option>
+              <option value="THB">THB-Thailand</option>
+              <option value="CHF">CHF-Switzerland</option>
+              <option value="EUR">EUR-Europe</option>
+              <option value="MYR">MYR-Malaysia</option>
+              <option value="BGN">BGN-Bulgaria</option>
+              <option value="TRY">TRY-Turky</option>
+              <option value="CNY">CNY-China-</option>
+              <option value="NOK">NOK-Norway</option>
+              <option value="NZD">NZD-Newzealand</option>
+              <option value="ZAR">ZAR-South Africa</option>
+              <option value="USD">USD-United States</option>
+              <option value="MXN">MXN-Mexico</option>
+              <option value="SGD">SGD-Singapore</option>
+              <option value="AUD">AUD-Australia</option>
+              <option value="ILS">ILS-Israel</option>
+              <option value="KRW">KRW-South Korea</option>
+              <option value="PLN">PLN-Poland</option>
+            </select>
+          </div>
+          <div class="button field">
+            <button onclick="calculate()">Calculate</button>
+          </div>
+          <div id="display-result"></div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
